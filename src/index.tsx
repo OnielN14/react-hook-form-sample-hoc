@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import { createTheme, ThemeProvider, CssBaseline } from '@material-ui/core'
+import { SnackbarProvider } from 'notistack'
+
+const theme = createTheme()
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline/>
+      <SnackbarProvider>
+        <App />
+      </SnackbarProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
