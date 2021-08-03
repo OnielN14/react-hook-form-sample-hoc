@@ -1,4 +1,4 @@
-# New Project
+# React Hook Form HOC Sample
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
